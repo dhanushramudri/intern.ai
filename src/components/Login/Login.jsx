@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Oval } from "react-loader-spinner";
 import styles from "./Login.module.css";
@@ -11,7 +12,10 @@ import coursera from "../../Images/coursera.png";
 import harvard from "../../Images/harvard.jpg";
 import freecodecamp from "../../Images/freecodecamp.jpg";
 import plussymbol from "../../Images/plussymbol.png";
+import Home from "../Home";
 function Login() {
+  const navigate = useNavigate();
+
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -28,67 +32,33 @@ function Login() {
     // window.location = `${process.env.REACT_APP_API_ENDPOINT}/auth/google`;
   };
 
-  const signup = (e) => {
-    console.log(email);
-    if (loading) return;
+  const login = async (e) => {
     e.preventDefault();
-    var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    var usernamePattern = /^[a-zA-Z][a-zA-Z0-9_]{2,15}$/;
+    setLoading(true);
 
-    if (
-      email.trim() === "" ||
-      password.trim() === "" ||
-      username.trim() === ""
-    ) {
-      setMessage("Please fill out all the fields");
-      setTimeout(() => {
-        setMessage("");
-      }, 5000);
-    } else if (username.length < 6) {
-      setMessage("Please enter a valid username ");
-      setTimeout(() => {
-        setMessage("");
-      }, 5000);
-    } else if (!usernamePattern.test(username)) {
-      setEmail("");
-      setMessage("Invalid Username");
-      setTimeout(() => {
-        setMessage("");
-      }, 5000);
-    } else if (!emailPattern.test(email)) {
-      setEmail("");
-      setMessage("Please enter a valid username ");
-      setTimeout(() => {
-        setMessage("");
-      }, 5000);
-    } else if (password.length < 6) {
-      setMessage("Password length must be atleast 6 characters");
-      setTimeout(() => {
-        setMessage("");
-      }, 5000);
-    } else {
-      setLoading(false);
-      fetch(`${process.env.REACT_APP_API_ENDPOINT}/signup`, {
+    try {
+      const response = await fetch("http://localhost:5000/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          name: username,
-          email: email,
-          password: password,
-        }),
-      })
-        .then((res) => {
-          return res.json();
-        })
-        .then((data) => {
-          setMessage(data.message);
-          setLoading(false);
-          setTimeout(() => {
-            setMessage("");
-          }, 5000);
-        });
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessage(data.message);
+        navigate("/");
+      } else {
+        setMessage(data.message);
+      }
+
+      setLoading(false);
+    } catch (error) {
+      console.error("Error during login:", error);
+      setMessage("Internal Server Error");
+      setLoading(false);
     }
   };
 
@@ -148,20 +118,7 @@ function Login() {
                 <hr className={styles.hr2} />
               </div>
             </div>
-            <form onSubmit={(e) => signup(e)}>
-              {/* <div className={styles.name_div}>
-                <label htmlFor="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  value={username}
-                  ref={username_ref}
-                  onChange={(e) => {
-                    setUsername(username_ref.current.value);
-                  }}
-                  placeholder="Enter a user name"
-                />
-              </div> */}
+            <form onSubmit={(e) => login(e)}>
               <div className={styles.email_div}>
                 <label htmlFor="email">Email</label>
                 <input
@@ -188,7 +145,7 @@ function Login() {
                   placeholder="Enter password"
                 />
               </div>
-              <button onClick={signup} className={styles.signup_button}>
+              <button onClick={login} className={styles.signup_button}>
                 {loading ? (
                   <Oval
                     height={20}

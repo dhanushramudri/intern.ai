@@ -27,9 +27,14 @@ function SignUp() {
     alert("Google");
     // window.location = `${process.env.REACT_APP_API_ENDPOINT}/auth/google`;
   };
-
+  // const signup = (e) => {
+  //   e.preventDefault();
+  //   console.log(email);
+  //   console.log(username);
+  //   console.log(email);
+  //   console.log(password);
+  // };
   const signup = (e) => {
-    console.log(email);
     if (loading) return;
     e.preventDefault();
     var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -68,7 +73,8 @@ function SignUp() {
       }, 5000);
     } else {
       setLoading(false);
-      fetch(`${process.env.REACT_APP_API_ENDPOINT}/signup`, {
+      // console.log(username);
+      fetch("http://localhost:5000/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

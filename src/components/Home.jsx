@@ -1,6 +1,8 @@
 import React from "react";
+import { Navigate } from "react-router-dom";
+import Login from "./Login/Login";
 
-const Home = () => {
+const Home = ({ message }) => {
   return <div>Home page</div>;
 };
 
