@@ -1,0 +1,816 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Montserrat:wght@300&family=Poppins&family=Roboto+Mono:wght@300&family=Signika+Negative:wght@300&family=Source+Code+Pro&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  font-family: Cera Round Pro DEMO BOLD;
+}
+.alert_modal img {
+  padding-right: 10px;
+  opacity: 80%;
+}
+.alert_modal {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  transition: transform 0.9s ease-in-out; /* Use 'transition' instead of 'translate' */
+  width: max-content;
+  background-color: #fff2e5;
+  color: #5c3300;
+  border-radius: 24px;
+  box-shadow: 0 4px 8px bisque; /* Adding a shadow for depth */
+  font-family: Poppins; /* Correcting the font family name */
+  font-weight: 600;
+  font-size: 14px;
+  position: absolute;
+}
+
+.login_container {
+  display: flex; /* Use flexbox */
+
+  width: 100%;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.left_container {
+  width: 850px;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.left_form_container {
+  width: 75%;
+  margin: 4% 12.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-color: grey; */
+  height: 95vh;
+}
+.left_form_container1 {
+  /* background-color: aquamarine; */
+  width: 100%;
+  margin-top: 30px;
+  height: 13vh;
+}
+a {
+  text-decoration: none;
+  padding-left: 2px;
+  font-size: 16px;
+  color: #d8b184;
+  font-weight: 700;
+}
+.google_signup_button_wrap {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+}
+.google_signup_button {
+  /* display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+ */
+  /* margin: 30px 10px; */
+  width: 100%;
+  /* margin: 0px 110px 0px; */
+  padding: 15px 100px;
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+
+  background-color: #f4f7fe;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.googleLogo {
+  width: 18px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 8px; /* Add some spacing between logo and text */
+}
+/* Define a wrapper for the Google button and the "or" line */
+.or_line_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.or_line_wrapper hr {
+  flex: 1;
+  border: none;
+  height: 1.5px;
+  margin: 0px 0px 0px 16px;
+  background-color: #f4f7fe;
+}
+.or_line_wrapper .hr2 {
+  flex: 1;
+  border: none;
+  height: 1.5px;
+  margin: 0px 16px 0px 0px;
+  background-color: #f4f7fe;
+}
+
+.or_line_wrapper span {
+  margin: 0 10px;
+  font-family: Montserrat;
+
+  padding: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* h1 {
+  font-family: monospace;
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: 15%;
+  word-spacing: -10px;
+} */
+.signup_text {
+  display: flex;
+  align-items: center;
+  margin-left: 120px;
+  margin-top: 6px;
+  font-weight: 900;
+  color: #5c3300;
+  font-family: poppins;
+  font-size: 34px;
+  /* margin-top: 30px;
+  display: flex; 
+  align-items: center;  */
+
+  /* margin: 0px 10px 0px;
+  width: 65%; */
+  /* Top, Right/Left, Bottom */
+
+  /* display: flex;
+  flex-direction: column;
+  color: #1a0e00;
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: 900;
+  height: max-content;
+  margin-left: 120px;
+  font-weight: 500;
+  color: #5c3300; */
+}
+.back_home_button {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  margin-left: 120px;
+  margin-top: -30px;
+  font-weight: 500;
+  color: #5c3300;
+  font-family: Montserrat;
+  font-size: 15px;
+}
+.back_home_button a {
+  font-weight: 500;
+  color: #5c3300;
+  font-family: Montserrat;
+  font-size: 15px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.back_home_button img {
+  margin-right: 10px;
+  /* Remove 'color' property, as it doesn't apply to <img> */
+}
+.already_button {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  margin-left: 120px;
+  margin-top: 6px;
+  font-weight: 500;
+  color: #5c3300;
+  font-family: Montserrat;
+  font-size: 15px;
+}
+.already_button a {
+  font-weight: 500;
+  color: #5c3300;
+  font-family: Montserrat;
+  font-size: 15px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the text within the Link */
+.already_button span a {
+  font-size: 15px;
+  font-weight: 600;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  text-decoration: none; /* Remove default underline */
+  color: #d8b184; /* Text color */
+}
+
+/* .already_button span {
+  padding-left: 4px;
+  font-size: 15px;
+  color: #d8b184;
+  font-weight: 700;
+} */
+
+/* .login_form {
+  width: 100%;
+  margin: 5%;
+  height: max-content;
+  padding: 50px;
+  background-color: grey;
+} */
+.Back_button {
+  font-family: monospace;
+  font-size: 17px;
+  color: #474747;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 35px;
+  text-align: center;
+  width: 70%;
+}
+.name_div {
+  width: 65%;
+  margin: 25px 110px 10px; /* Top, Right/Left, Bottom */
+
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  /* background-color: aqua; */
+}
+.name_div label {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 13px;
+}
+.name_div input {
+  border-radius: 24px;
+  margin: 7px 2px;
+  border: none;
+  font-size: 14px;
+  font-family: Montserrat;
+  padding: 15px 20px;
+  text-align: left;
+  outline: none;
+  font-weight: 600;
+  background-color: #f4f7fe;
+  color: rgba(0, 0, 0, 0.79);
+}
+.email_div {
+  width: 65%;
+  margin: 0px 110px 0px;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  /* background-color: aqua; */
+}
+.email_div label {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 13px;
+}
+.email_div input {
+  border-radius: 24px;
+  margin: 10px 2px;
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+  font-family: Montserrat;
+  padding: 15px 20px;
+  text-align: left;
+  font-weight: 600;
+  background-color: #f4f7fe;
+  color: rgba(0, 0, 0, 0.79);
+}
+.password_div {
+  width: 65%;
+  margin: 4px 110px 20px;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  /* background-color: aqua; */
+}
+.password_div label {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 13px;
+}
+.password_div input {
+  border-radius: 24px;
+  margin: 10px 2px;
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+  font-family: Montserrat;
+  padding: 15px 20px;
+  text-align: left;
+  font-weight: 600;
+  background-color: #f4f7fe;
+  color: rgba(0, 0, 0, 0.79);
+}
+.signup_button {
+  width: 65%;
+  margin: 10px 110px 10px;
+  cursor: pointer;
+  padding: 13px 20px;
+  background-color: #d8b184;
+
+  border: none;
+  font-family: poppins;
+  font-weight: 600;
+  color: #f4f7fe;
+  border-radius: 10px;
+  font-size: 15px;
+  height: max-content;
+}
+.terms {
+  font-family: Montserrat;
+  font-size: 14px;
+  width: 65%;
+  margin: 4px 0px 20px;
+  margin-left: 50px;
+}
+.terms span {
+  color: #d8b184;
+  font-weight: 600;
+}
+
+.right_container {
+  width: 50%;
+  border-bottom-left-radius: 40%;
+
+  height: 100vh;
+
+  background-image: linear-gradient(135deg, #fff2e5 0%, #dfaa77 100%);
+}
+.SignupImage {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 40%;
+  background-image: linear-gradient(135deg, #fff2e5 0%, #dfaa77 100%);
+}
+
+/* For screens smaller than 768px (phones) */
+@media (max-width: 768px) {
+  .login_container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left_container {
+    width: 100%;
+    height: auto;
+  }
+
+  .left_form_container {
+    width: 90%;
+    margin: 4% 5%;
+    height: auto;
+  }
+
+  /* Adjust other elements' widths, margins, and paddings as needed */
+  .name_div,
+  .email_div,
+  .password_div {
+    width: 90%;
+    margin: 10px 5%;
+  }
+
+  /* Modify button sizes or other styles for smaller screens */
+  .signup_button {
+    width: 90%;
+    margin: 10px 5%;
+  }
+
+  /* Adjust font sizes, paddings, or margins for smaller screens */
+  .signin_text {
+    font-size: 24px;
+    margin-left: 5%;
+  }
+}
+form {
+  width: 100%; /* Adjust as needed */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  /* Add other necessary styles */
+}
+.logo_container {
+  margin: 30px;
+  padding: 40px;
+  height: max-content;
+  /* background-color: blueviolet; */
+}
+.logo_container_wrap {
+  font-family: poppins;
+  font-size: 25px;
+  font-weight: 900;
+  color: #291600;
+  display: flex;
+  align-items: center;
+}
+.logo_container_wrap img {
+  width: 60px;
+  padding-right: 10px;
+  height: 60px;
+  border-radius: 50%;
+}
+.title1 {
+  margin-top: 90px;
+  padding-left: 70px;
+  height: max-content;
+  font-size: 35px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  color: black;
+}
+.title2 {
+  margin-top: 5px;
+  padding-left: 60px;
+  height: max-content;
+  font-size: 50px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  color: #5c3300;
+}
+.title3 {
+  margin-top: 5%;
+  padding-left: 70px;
+  height: max-content;
+  font-size: 18px;
+  width: 80%;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: black;
+}
+.courses_container {
+  margin-left: 10%;
+  margin-top: 5%;
+  width: fit-content;
+
+  height: max-content;
+  /* background-color: cadetblue; */
+}
+.images_circular {
+  width: 65px;
+  height: 65px;
+  border: 10px;
+  /* scale: 1; */
+  border: 4px solid #e3ae72;
+  border-radius: 50%;
+}
+.images_circular_overlaper {
+  width: 65px;
+  height: 65px;
+  border: 10px;
+  margin-left: -15px;
+  border: 4px solid #e3ae72;
+  border-radius: 50%;
+}
+.images_circular_noborder {
+  width: 65px;
+  height: 65px;
+  border: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.images_circular_logo_course {
+  margin-left: 15px;
+  width: 65px;
+  height: 65px;
+  border: 10px;
+  border: 4px solid #e0a562;
+  border-radius: 50%;
+}
+/* For screens smaller than 900px */
+@media (max-width: 1200px) {
+  .login_container {
+    flex-direction: column;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .left_container {
+    width: 100%;
+    height: auto;
+  }
+
+  .right_container {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust other elements' widths, margins, and paddings as needed */
+  .name_div,
+  .email_div,
+  .password_div {
+    width: 70%;
+    margin: 10px 15%;
+  }
+
+  /* Modify button sizes or other styles for smaller screens */
+  .signup_button {
+    width: 70%;
+    margin: 10px 15%;
+  }
+
+  /* Adjust font sizes, paddings, or margins for smaller screens */
+  .signin_text {
+    font-size: 24px;
+    margin-left: 5%;
+  }
+  .google_signup_button_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+  }
+  .google_signup_button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    /* margin: 30px 10px; */
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+
+    background-color: #f4f7fe;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 13px;
+  }
+}
+/* For screens smaller than 500px */
+@media (max-width: 500px) {
+  /* Adjustments for smaller screens */
+  .login_container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left_container,
+  .right_container {
+    width: 100%;
+    height: auto;
+  }
+  .signup_text {
+    display: flex;
+    align-items: center;
+
+    margin-top: 6px;
+    font-weight: 900;
+    color: #5c3300;
+    font-family: poppins;
+    font-size: 34px;
+  }
+  /* Modify other elements' widths, margins, and paddings for smaller screens */
+  .name_div,
+  .email_div,
+  .password_div {
+    width: 90%;
+    margin: 10px 5%;
+  }
+
+  .signup_button {
+    width: 90%;
+    margin: 10px 5%;
+  }
+  .signup_text {
+    margin-left: 30px;
+    margin-top: 10px;
+
+    font-size: 30px;
+  }
+  .back_home_button {
+    margin-left: 30px;
+    margin-top: -30px;
+    font-size: 15px;
+  }
+  .back_home_button a {
+    font-weight: 500;
+    color: #5c3300;
+    font-family: Montserrat;
+    font-size: 15px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .back_home_button img {
+    margin-right: 10px;
+    /* Remove 'color' property, as it doesn't apply to <img> */
+  }
+  .already_button {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    margin-left: 10px;
+    margin-top: 6px;
+
+    font-weight: 500;
+    color: #5c3300;
+    font-family: Montserrat;
+    font-size: 15px;
+  }
+  .already_button a {
+    font-weight: 500;
+    color: #5c3300;
+    font-family: Montserrat;
+    font-size: 15px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .already_button span a {
+    font-size: 15px;
+    font-weight: 600;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    text-decoration: none; /* Remove default underline */
+    color: #d8b184; /* Text color */
+  }
+
+  .Back_button {
+    font-family: monospace;
+    font-size: 17px;
+    color: #474747;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 35px;
+    text-align: center;
+    width: 70%;
+  }
+  .terms {
+    font-size: 12px;
+    width: 80%;
+    margin: 10px 0px 40px;
+    margin-left: 0px;
+  }
+  .terms span {
+    color: #d8b184;
+    font-weight: 600;
+  }
+
+  .logo_container {
+    margin: 5px;
+    padding: 30px;
+    height: max-content;
+    /* background-color: blueviolet; */
+  }
+  .logo_container_wrap {
+    font-family: poppins;
+    font-size: 25px;
+    font-weight: 900;
+    color: #291600;
+    display: flex;
+    align-items: center;
+  }
+  .logo_container_wrap img {
+    width: 60px;
+    padding-right: 10px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .title1 {
+    margin-top: 50px;
+    padding-left: 50px;
+    height: max-content;
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    color: black;
+  }
+  .title2 {
+    margin-top: 5px;
+    margin: 5px 2px;
+    padding-left: 40px;
+    height: max-content;
+    font-size: 36px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    color: #5c3300;
+  }
+  .title3 {
+    margin: 10% 5%;
+    padding-left: 70px;
+    height: max-content;
+    font-size: 16px;
+    width: 80%;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: black;
+  }
+  .courses_container {
+    margin-left: 10%;
+    margin-top: 15%;
+    width: fit-content;
+
+    height: max-content;
+    /* background-color: cadetblue; */
+  }
+  .images_circular {
+    width: 60px;
+    height: 60px;
+    border: 10px;
+    /* scale: 1; */
+    border: 4px solid #e3ae72;
+    border-radius: 50%;
+  }
+  .images_circular_overlaper {
+    width: 60px;
+    height: 60px;
+    border: 10px;
+    margin-left: -15px;
+    border: 4px solid #e3ae72;
+    border-radius: 50%;
+  }
+  .images_circular_noborder {
+    width: 65px;
+    height: 65px;
+    border: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  .images_circular_logo_course {
+    margin-left: 15px;
+    width: 60px;
+    height: 60px;
+    border: 10px;
+    border: 4px solid #e3ae72;
+    border-radius: 50%;
+  }
+  .login_container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .left_container {
+    margin-top: 10%;
+  }
+  .right_container {
+    width: 100%;
+    border-bottom-left-radius: 40%;
+
+    height: max-content;
+
+    background-image: linear-gradient(135deg, #fff2e5 0%, #dbc1ab 100%);
+  }
+  /* Adjust font sizes, paddings, or margins for smaller screens */
+}
+@media (max-width: 1200px) and (min-width: 500px) {
+  .title1 {
+    font-size: 50px;
+  }
+  .title2 {
+    font-size: 60px;
+  }
+  .right_container {
+    height: max-content;
+  }
+  .courses_container {
+    margin-left: 10%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    width: fit-content;
+
+    height: max-content;
+    /* background-color: cadetblue; */
+  }
+  .title3 {
+    margin: 5%;
+    margin-bottom: 15%;
+    padding-left: 60px;
+    height: max-content;
+    font-size: 18px;
+    width: 80%;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: black;
+  }
+}
