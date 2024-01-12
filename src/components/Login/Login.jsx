@@ -178,8 +178,8 @@ function Login() {
               Untangle
             </div>
           </div>
-          <div className={styles.title1}>The #1 Course Compass</div>
-          <div className={styles.title2}>Your Course Navigator</div>
+          <div className={styles.title1}>The #1 Intern Compass</div>
+          <div className={styles.title2}>Your Internship Finder</div>
           <div className={styles.courses_container}>
             <img
               className={styles.images_circular}
@@ -213,8 +213,8 @@ function Login() {
             />
           </div>
           <div className={styles.title3}>
-            Navigate the limitless world of learning effortlessly. Course
-            exploration, simplified!
+            Explore endless internship opportunities effortlessly. Simplified
+            navigation for the latest opportunities!
           </div>
         </div>
       </div>
