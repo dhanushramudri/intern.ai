@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 import Login from "./Login/Login";
 
 const Home = ({ message }) => {
-  return <div>Home page</div>;
+  return <div>Hello Welcome to Landing Page</div>;
 };
 
 export default Home;
