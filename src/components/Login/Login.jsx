@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Oval } from "react-loader-spinner";
@@ -25,6 +25,13 @@ function Login() {
   const username_ref = useRef();
   const email_ref = useRef();
   const password_ref = useRef();
+  const [token, setToken] = useState("");
+  useEffect(() => {
+    const storedToken = localStorage.getItem("token");
+    if (storedToken) {
+      setToken(storedToken);
+    }
+  }, []);
 
   const googleSignupHandler = () => {
     console.log("google");
@@ -49,6 +56,14 @@ function Login() {
 
       if (response.ok) {
         setMessage(data.message);
+
+        // Store the token in local storage
+        localStorage.setItem("token", data.token);
+
+        // Set the token in the state for rendering on the page
+        setToken(data.token);
+
+        // Navigate to the desired location after successful login
         navigate("/");
       } else {
         setMessage(data.message);
@@ -95,6 +110,12 @@ function Login() {
               </div>
 
               <div className={styles.signup_text}>Login</div>
+              {/* {token && (
+                <div className={styles.token_display}>
+                  Token: <span>{token}</span>
+                </div>
+              )} */}
+
               <div className={styles.already_button}>
                 Don't have an account ?
                 <span>

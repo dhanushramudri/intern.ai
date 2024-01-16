@@ -1,0 +1,116 @@
+.header {
+  width: 100%;
+  height: max-content;
+}
+.header_container {
+  width: 100%;
+  height: max-content;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header_items {
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  display: flex;
+  margin-left: 80px;
+  height: 55px;
+  width: 165px;
+  color: #0077b6;
+  align-items: center;
+  font-size: 25px;
+}
+.logo span {
+  color: black;
+}
+.beta {
+  font-size: 13px;
+  padding: 6px 15px;
+  margin: 5px;
+  color: #acafac;
+  border-radius: 10px;
+  background-color: #ededed;
+}
+
+.header_items {
+  position: absolute;
+  right: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Cera Round Pro DEMO MEDIUM" !important;
+}
+.header_items :nth-child(1) {
+  color: black;
+  font-size: 16px;
+  height: fit-content;
+  cursor: pointer;
+  margin-right: 8px;
+  line-height: 1.75rem;
+  padding: 8px 18px;
+  border-radius: 16px;
+  font-weight: 900;
+}
+.header_items :nth-child(2) {
+  color: black;
+  font-size: 16px;
+  height: fit-content;
+  cursor: pointer;
+  margin-right: 8px;
+  line-height: 1.75rem;
+  padding: 8px 18px;
+  border-radius: 16px;
+  font-weight: 900;
+}
+.header_items :nth-child(3) {
+  color: black;
+  font-size: 16px;
+  height: fit-content;
+  cursor: pointer;
+  margin-right: 8px;
+  line-height: 1.75rem;
+  padding: 8px 18px;
+  border-radius: 16px;
+  font-weight: 900;
+  border: 2px solid #0077b6;
+}
+.header_items :nth-child(3):hover {
+  color: black;
+}
+
+.header_items :nth-child(4) {
+  color: black;
+  font-size: 16px;
+  height: fit-content;
+  cursor: pointer;
+  margin-right: 8px;
+  line-height: 1.75rem;
+  padding: 8px 18px;
+  border-radius: 16px;
+  font-weight: 900;
+  color: rgba(69, 86, 96, 0.796);
+  background-color: #0076b661;
+  border: 2px solid #00588817;
+}
+.header_items :nth-child(4):hover {
+  border: 2px solid #0077b6;
+  background-color: #0077b6;
+  color: white;
+}
+
+.header_items :nth-child(5) {
+  color: white;
+
+  font-size: 16px;
+  height: fit-content;
+  cursor: pointer;
+  margin-right: 8px;
+  line-height: 1.75rem;
+  padding: 8px 18px;
+  border-radius: 16px;
+  font-weight: 900;
+  background-color: #0077b6;
+}

@@ -1,38 +1,47 @@
+.full_header {
+  background-image: url("./Images/background.png");
+}
+
 .App {
-  text-align: center;
+  position: relative;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropdown-container {
+  margin-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background-svg {
+  position: absolute;
+  top: 0%;
+  z-index: -1;
+  height: fit-content;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wishlist_btn {
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 1px #d7d7d7 solid;
+  font-size: 20px;
+  font-weight: 500;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.wishlist_btn img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.wishlist_btn:hover {
+  background-color: #ffb223;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
 }

@@ -1,0 +1,52 @@
+.dropdown_container {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: Cera Round Pro DEMO MEDIUM !important;
+  justify-content: center;
+  margin-top: 60px;
+  width: 80%;
+  margin: 5% 10%;
+}
+.row1 {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+.row1 div {
+  color: black;
+
+  font-size: 16px;
+  height: fit-content;
+  cursor: pointer;
+  margin-right: 8px;
+  line-height: 1.75rem;
+  padding: 8px 18px;
+  border-radius: 16px;
+  font-weight: 900;
+  border: 2px solid #0077b6;
+}
+.row2 {
+  margin: 2% 0%;
+
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row2 div {
+  color: black;
+
+  font-size: 16px;
+  height: fit-content;
+  cursor: pointer;
+  margin-right: 8px;
+  line-height: 1.75rem;
+  padding: 8px 18px;
+  border-radius: 16px;
+  font-weight: 900;
+  border: 2px solid #0077b6;
+}

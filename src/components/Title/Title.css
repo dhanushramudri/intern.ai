@@ -1,0 +1,66 @@
+.header_container2 {
+  display: flex;
+  height: max-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header_title {
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  margin-top: 70px;
+  font-family: "Cera Round Pro DEMO BLACK";
+  color: #66bb6a;
+  width: 70%;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+  transition: color 1s ease-in-out;
+}
+.header_title::selection {
+  background-color: #0077b6;
+  color: beige;
+}
+.header_title:hover {
+  color: grey;
+  color: linear-gradient(#66bb6a, #66bb6a);
+}
+.elevate {
+  color: #0077b6;
+}
+.header_description {
+  color: #807c77;
+  line-height: 40px;
+  width: 70%;
+  margin-top: 35px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: Cera Round Pro DEMO BOLD;
+}
+.header_btn {
+  margin-top: 35px;
+}
+.email_alert_btn {
+  align-items: center;
+  background-color: #0077b6;
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: Cera Round Pro DEMO BOLD;
+  font-size: 20px;
+  height: auto;
+  justify-content: center;
+  max-width: 100%;
+  padding: 15px 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: background-color 1s ease;
+}
+.email_alert_btn:hover {
+  background-color: #66bb6a;
+}
