@@ -21,21 +21,11 @@ const Job = ({ job }) => {
         <a
           // href="/job/65a7724e63112870832be12a"
           id="job-65a7724e63112870832be12a"
-          className="job-item"
-          style={{ textDecoration: "none" }}
+          className="main_job_container"
+          style={{}}
         >
-          <div className="location-details-container">
-            <div
-              style={{
-                display: "flex",
-                maxWidth: "250px",
-                textOverflow: "ellipsis",
-                overflow: "hidden",
-                whiteSpace: "nowrap",
-                flexDirection: "column",
-                marginRight: "80px",
-              }}
-            >
+          <div className="location_container">
+            <div className="location_sub_container">
               <div style={{ color: "black" }}>📍 Philippines</div>
               <div
                 style={{
@@ -53,28 +43,8 @@ const Job = ({ job }) => {
                 today
               </div>
             </div>
-            {/* <div
-              style={{
-                width: "40px",
-                height: "40px",
-                position: "relative",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div
-                id="bookmark-loading-0"
-                style={{ position: "absolute", zIndex: "2", display: "none" }}
-              ></div>
-              <img
-                id="bookmark-0"
-                src="/static/media/bookmark.8cbad6c7129163634b34d2387e1f42bb.svg"
-                alt="bookmark"
-              />
-            </div> */}
           </div>
-          <div className="company-logo-container">
+          <div className="company_logo_container">
             <img
               loading="lazy"
               src="https://workablehr.s3.amazonaws.com/uploads/account/logo/508165/logo"
@@ -82,50 +52,27 @@ const Job = ({ job }) => {
               className="company-logo"
             />
           </div>
-          <div className="content-container">
-            <div className="job-title">
+          <div className="data_container">
+            <div className="job_title">
               Dental Patient Coordinator (AU Dental, Office-based)
             </div>
-            <div className="company-details-1">
+            <div className="company_title_container">
               <div className="company-name item" style={{ display: "flex" }}>
                 ConnectOS<div className="hiring-badge"></div>
               </div>
             </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                marginTop: "1rem",
-              }}
-            >
-              <div style={{ display: "flex", flexDirection: "column" }}></div>
-              <div style={{ display: "flex", flexDirection: "column" }}>
-                <h1
-                  style={{
-                    fontSize: "18px",
-                    maxWidth: "100%",
-                    width: "100%",
-                    color: "black",
-                  }}
-                >
-                  🎯 Requirements
-                </h1>
-                <p
-                  className="requirements_text"
-                  style={{
-                    fontSize: "18px",
-                    fontWeight: "500",
-                    lineHeight: "1.5",
-                    color: "rgb(170, 170, 170)",
-                  }}
-                >
+            <div className="job_requirements_container">
+              {/* <div style={{ display: "flex", flexDirection: "column" }}></div> */}
+              <div className="job_requirements_subcontainer">
+                <h1>🎯 Requirements</h1>
+                <p className="job_requirements_text">
                   2+ years admin/coordinator experience. Strong communication
                   via phone/email. Good computer skills, including database and
                   scheduling
                 </p>
               </div>
             </div>
-            <div className="more-details-1">
+            <div className="job_related">
               <div id="more-details-1-0" className="item">
                 Apply
               </div>
@@ -136,7 +83,7 @@ const Job = ({ job }) => {
                 Website
               </div>
             </div>
-            <div className="job-details">
+            <div className="job_details">
               <div className="item">💰 480,000 PHP</div>
               <div className="item">🛢️ Workable</div>
               <div className="item">⏰ Full Time</div>

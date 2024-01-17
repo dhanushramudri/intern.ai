@@ -1,9 +1,17 @@
 // Jobs.js
 import React, { useEffect, useState } from "react";
 import Job from "../Job/Job";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 
 const Jobs = () => {
   const [data, setData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const jobsPerPage = 5;
+  const indexOfLastJob = currentPage * jobsPerPage;
+  const indexOfFirstJob = indexOfLastJob - jobsPerPage;
+  const currentJobs = data.slice(indexOfFirstJob, indexOfLastJob);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,11 +31,30 @@ const Jobs = () => {
     fetchData();
   }, []);
 
+  const handlePageChange = (event, value) => {
+    setCurrentPage(value);
+  };
+
   return (
     <div>
-      {data.map((job) => (
+      {currentJobs.map((job) => (
         <Job key={job.id} job={job} />
       ))}
+      <div className="pagination">
+        <Stack spacing={2}>
+          <Pagination
+            color="secondary"
+            count={Math.ceil(data.length / jobsPerPage)}
+            shape="rounded"
+            page={currentPage}
+            onChange={handlePageChange}
+          />
+        </Stack>
+        <button className="pagination_nextBtn">
+          {/* Next →:-](⌐■_■)✍️(◔◡◔)( ͡° ͜ʖ ͡°)( ͡~ ͜ʖ ͡°)→_→ */}
+          Next →_→
+        </button>
+      </div>
     </div>
   );
 };
