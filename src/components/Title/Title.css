@@ -29,6 +29,10 @@
 .elevate {
   color: #0077b6;
 }
+.elevate::selection {
+  background-color: transparent;
+  color: #66bb6a;
+}
 .header_description {
   color: #807c77;
   line-height: 40px;
@@ -38,6 +42,10 @@
   font-size: 22px;
   font-weight: 500;
   font-family: Cera Round Pro DEMO BOLD;
+}
+.header_description::selection {
+  background-color: #0077b6;
+  color: beige;
 }
 .header_btn {
   margin-top: 35px;

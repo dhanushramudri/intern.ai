@@ -54,6 +54,10 @@
   border-radius: 16px;
   font-weight: 900;
 }
+.header_items :nth-child(1):hover {
+  color: #0077b6;
+}
+
 .header_items :nth-child(2) {
   color: black;
   font-size: 16px;
@@ -64,6 +68,9 @@
   padding: 8px 18px;
   border-radius: 16px;
   font-weight: 900;
+}
+.header_items :nth-child(2):hover {
+  color: #0077b6;
 }
 .header_items :nth-child(3) {
   color: black;
