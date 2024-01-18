@@ -84,3 +84,5 @@
 .email_alert_btn:hover {
   background-color: #66bb6a;
 }
+@media (max-width: 500px) {
+}

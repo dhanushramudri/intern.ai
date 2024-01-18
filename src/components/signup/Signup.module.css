@@ -19,10 +19,10 @@ body {
   padding: 10px 30px;
   transition: transform 0.9s ease-in-out; /* Use 'transition' instead of 'translate' */
   width: max-content;
-  background-color: #fff2e5;
-  color: #5c3300;
+  background-color: #00b6b666;
+  color: #000000ac;
   border-radius: 24px;
-  box-shadow: 0 4px 8px bisque; /* Adding a shadow for depth */
+  box-shadow: 0 4px 8px #00b6b698; /* Adding a shadow for depth */
   font-family: Poppins; /* Correcting the font family name */
   font-weight: 600;
   font-size: 14px;
@@ -146,7 +146,7 @@ a {
   margin-left: 120px;
   margin-top: 6px;
   font-weight: 900;
-  color: #5c3300;
+  color: #023d5ccc;
   font-family: poppins;
   font-size: 34px;
   /* margin-top: 30px;
@@ -174,13 +174,13 @@ a {
   margin-left: 120px;
   margin-top: -30px;
   font-weight: 500;
-  color: #5c3300;
+  color: #000000;
   font-family: Montserrat;
   font-size: 15px;
 }
 .back_home_button a {
   font-weight: 500;
-  color: #5c3300;
+  color: #000000;
   font-family: Montserrat;
   font-size: 15px;
   display: flex;
@@ -198,13 +198,13 @@ a {
   margin-left: 120px;
   margin-top: 6px;
   font-weight: 500;
-  color: #5c3300;
+  color: #000000;
   font-family: Montserrat;
   font-size: 15px;
 }
 .already_button a {
   font-weight: 500;
-  color: #5c3300;
+  color: #000000;
   font-family: Montserrat;
   font-size: 15px;
   display: flex;
@@ -220,7 +220,7 @@ a {
   display: flex; /* Use flexbox */
   align-items: center; /* Align items vertically */
   text-decoration: none; /* Remove default underline */
-  color: #d8b184; /* Text color */
+  color: #00b6b6; /* Text color */
 }
 
 /* .already_button span {
@@ -333,7 +333,9 @@ a {
   margin: 10px 110px 10px;
   cursor: pointer;
   padding: 13px 20px;
-  background-color: #d8b184;
+  /* background-color: #d8b184; */
+  /* background-image: linear-gradient(135deg, #66bb6a 0%, #0077b6 100%); */
+  background-color: #0076b6bf;
 
   border: none;
   font-family: poppins;
@@ -343,6 +345,10 @@ a {
   font-size: 15px;
   height: max-content;
 }
+.signup_button:hover {
+  background-color: #0076b6d0;
+  color: beige;
+}
 .terms {
   font-family: Montserrat;
   font-size: 14px;
@@ -351,23 +357,38 @@ a {
   margin-left: 50px;
 }
 .terms span {
-  color: #d8b184;
+  color: #00b6b6;
   font-weight: 600;
 }
-
+.signup_logo {
+  display: flex;
+  margin-left: 0%;
+  height: 55px;
+  width: 165px;
+  color: #0077b6;
+  align-items: center;
+  font-size: 30px;
+}
+.signup_logo span {
+  color: black;
+}
 .right_container {
   width: 50%;
   border-bottom-left-radius: 40%;
 
   height: 100vh;
-
-  background-image: linear-gradient(135deg, #fff2e5 0%, #dfaa77 100%);
+  background-image: linear-gradient(
+    135deg,
+    #f8f8c68a 0%,
+    #66bb6aab 60%,
+    #0076b6ac 100%
+  );
 }
 .SignupImage {
   width: 100%;
   height: 100%;
   border-bottom-left-radius: 40%;
-  background-image: linear-gradient(135deg, #fff2e5 0%, #dfaa77 100%);
+  background-image: linear-gradient(135deg, #66bb6a 0%, #0077b6 100%);
 }
 
 /* For screens smaller than 768px (phones) */
@@ -441,7 +462,7 @@ form {
   font-size: 35px;
   font-family: "Kanit", sans-serif;
   font-weight: 600;
-  color: black;
+  color: #1a1a1a;
 }
 .title2 {
   margin-top: 5px;
@@ -450,7 +471,7 @@ form {
   font-size: 50px;
   font-family: "Kanit", sans-serif;
   font-weight: 600;
-  color: #5c3300;
+  color: #004080;
 }
 .title3 {
   margin-top: 5%;
@@ -475,7 +496,7 @@ form {
   height: 65px;
   border: 10px;
   /* scale: 1; */
-  border: 4px solid #e3ae72;
+  border: 4px solid #66bb6a;
   border-radius: 50%;
 }
 .images_circular_overlaper {
@@ -483,7 +504,7 @@ form {
   height: 65px;
   border: 10px;
   margin-left: -15px;
-  border: 4px solid #e3ae72;
+  border: 4px solid #66bb6a;
   border-radius: 50%;
 }
 .images_circular_noborder {
@@ -498,7 +519,7 @@ form {
   width: 65px;
   height: 65px;
   border: 10px;
-  border: 4px solid #e0a562;
+  border: 4px solid #66bb6a;
   border-radius: 50%;
 }
 /* For screens smaller than 900px */
@@ -585,7 +606,7 @@ form {
 
     margin-top: 6px;
     font-weight: 900;
-    color: #5c3300;
+    color: #023d5ccc;
     font-family: poppins;
     font-size: 34px;
   }
@@ -614,7 +635,7 @@ form {
   }
   .back_home_button a {
     font-weight: 500;
-    color: #5c3300;
+    color: #000000;
     font-family: Montserrat;
     font-size: 15px;
     display: flex;
@@ -633,13 +654,13 @@ form {
     margin-top: 6px;
 
     font-weight: 500;
-    color: #5c3300;
+    color: #000000;
     font-family: Montserrat;
     font-size: 15px;
   }
   .already_button a {
     font-weight: 500;
-    color: #5c3300;
+    color: #000000;
     font-family: Montserrat;
     font-size: 15px;
     display: flex;
@@ -654,7 +675,8 @@ form {
     display: flex; /* Use flexbox */
     align-items: center; /* Align items vertically */
     text-decoration: none; /* Remove default underline */
-    color: #d8b184; /* Text color */
+    /* color: #d8b184; Text color */
+    color: #00b6b6; /* Text color */
   }
 
   .Back_button {
@@ -674,7 +696,8 @@ form {
     margin-left: 0px;
   }
   .terms span {
-    color: #d8b184;
+    color: #00b6b6; /* Text color */
+
     font-weight: 600;
   }
 
@@ -715,7 +738,7 @@ form {
     font-size: 36px;
     font-family: "Kanit", sans-serif;
     font-weight: 600;
-    color: #5c3300;
+    color: #004080;
   }
   .title3 {
     margin: 10% 5%;
@@ -779,7 +802,7 @@ form {
 
     height: max-content;
 
-    background-image: linear-gradient(135deg, #fff2e5 0%, #dbc1ab 100%);
+    background-image: linear-gradient(135deg, #66bb6a6f 40%, #0076b6ae 100%);
   }
   /* Adjust font sizes, paddings, or margins for smaller screens */
 }

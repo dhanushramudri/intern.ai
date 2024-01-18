@@ -222,9 +222,9 @@ function SignUp() {
         </div>
         <div className={styles.right_container}>
           <div className={styles.logo_container}>
-            <div className={styles.logo_container_wrap}>
-              <img src={Logo} alt="Logo" />
-              Untangle
+            <div className={styles.signup_logo}>
+              Intern <span>.ai</span>
+              <div className="beta">beta</div>
             </div>
           </div>
           <div className={styles.title1}>The #1 Intern Compass</div>

@@ -5,44 +5,44 @@ import RightArrow from "../../Images/right_arrow.png";
 const Footer = () => {
   return (
     <>
-      <div className="footer-container">
-        <div className="footer-greet-text">
+      <div className="footer_container">
+        <div className="footer_greet_text">
           Hey 👋 I'm Dhanush, the creator of Intern.ai. I'd love to hear your
           feedback — Get in touch via DM or email{" "}
-          <span className="footer-spencer-email">dhanush@Intern.ai</span>
+          <span className="footer_spencer_email">dhanush@Intern.ai</span>
         </div>
-        <div className="footer-sections">
-          <div className="footer-section">
+        <div className="footer_sections">
+          <div className="footer_section">
             <div className="footer_logo">
               Intern <span>.ai</span>
               <div className="beta">beta</div>
             </div>
-            <div className="footer-found-job">
-              Found a Internship not at Intern?
+            <div className="footer_found_job">
+              Found an Internship not at Intern?
             </div>
-            <button className="email-alert-btn">
-              Submit it here <img src={RightArrow} />
+            <button className="email_alert_btn">
+              Submit it here <img src={RightArrow} alt="Right Arrow" />
             </button>
           </div>
-          <div className="footer-section">
-            <div className="footer-section-title">Search</div>
-            <div className="footer-section-link">Jobs by Country</div>
-            <div className="footer-section-link">Jobs by Job Title</div>
-            <div className="footer-section-link">Jobs by Location Type</div>
-            <div className="footer-section-link">Jobs by keyword search</div>
+          <div className="footer_section">
+            <div className="footer_section_title">Search</div>
+            <div className="footer_section_link">Jobs by Country</div>
+            <div className="footer_section_link">Jobs by Job Title</div>
+            <div className="footer_section_link">Jobs by Location Type</div>
+            <div className="footer_section_link">Jobs by keyword search</div>
           </div>
-          <div className="footer-section">
-            <div className="footer-section-title">Useful Links</div>
-            <div className="footer-section-link">Advice</div>
-            <div className="footer-section-link">Promote Job</div>
-            <div className="footer-section-link">
+          <div className="footer_section">
+            <div className="footer_section_title">Useful Links</div>
+            <div className="footer_section_link">Advice</div>
+            <div className="footer_section_link">Promote Job</div>
+            <div className="footer_section_link">
               Create email alerts for new Jobs
             </div>
           </div>
-          <div className="footer-section">
-            <div className="footer-section-title">Contact Us</div>
+          <div className="footer_section">
+            <div className="footer_section_title">Contact Us</div>
             <div style={{ display: "flex", flexDirection: "row" }}>
-              <div className="footer-section-link-contact">
+              <div className="footer_section_link_contact">
                 <svg
                   width="40"
                   height="40"
@@ -57,8 +57,8 @@ const Footer = () => {
                   ></path>
                 </svg>
               </div>
-              <div className="footer-section-link-contact">
-                <svg
+              <div className="footer_section_link_contact">
+                {/* <svg
                   viewBox="-256 -256 768.00 768.00"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -101,9 +101,9 @@ const Footer = () => {
                       </path>{" "}
                     </g>{" "}
                   </g>
-                </svg>
+                </svg> */}
               </div>
-              <div className="footer-section-link-contact">
+              <div className="footer_section_link_contact">
                 <svg
                   width="40"
                   height="40"
@@ -130,7 +130,7 @@ const Footer = () => {
                   </defs>
                 </svg>
               </div>
-              <div className="footer-section-link-contact">
+              <div className="footer_section_link_contact">
                 <svg
                   width="40"
                   height="40"
