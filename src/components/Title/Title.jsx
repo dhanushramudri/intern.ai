@@ -9,7 +9,7 @@ const Title = () => {
       <h2 className="header_description">
         We use AI to scan{" "}
         <span className="Elevate">
-          <span>175,387</span>
+          <span>175,387 </span>
         </span>
         tech jobs in real-time directly from company pages. Every company, every
         job, actually hiring on the internet.{" "}

@@ -121,6 +121,9 @@
   font-weight: 900;
   background-color: #0077b6;
 }
+.header_items :nth-child(5):hover {
+  background-color: #068ad1;
+}
 .medium_header {
   display: none;
 }
@@ -131,7 +134,7 @@
   .medium_header {
     width: 100%;
     height: max-content;
-    padding: 2%;
+    padding: 3% 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
