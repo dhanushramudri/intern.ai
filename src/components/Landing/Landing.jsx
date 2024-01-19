@@ -17,7 +17,8 @@ const Landing = () => {
           <div className="title">
             <div className="title_container">
               <div className="container1_title">
-                <span className="unsuckify">Unsuckify</span> the job search
+                <span className="unsuckify">Unsuckify</span> the Internship
+                search
               </div>
               <p className="container1_description">
                 We use AI to scan{" "}
