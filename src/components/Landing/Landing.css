@@ -521,6 +521,7 @@ h2 {
 
 @media (max-width: 850px) {
   .landing_container1 {
+    margin-top: 3%;
     flex-direction: column;
   }
   .landing_container1 .title {
