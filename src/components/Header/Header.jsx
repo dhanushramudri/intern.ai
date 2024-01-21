@@ -18,6 +18,11 @@ const Header = () => {
     document.getElementById("menu_bar-2").classList.toggle("open-2");
     document.getElementById("menu_bar-3").classList.toggle("open-3");
   }
+  const LogoutHandler = () => {
+    localStorage.removeItem("token");
+    console.log("User logged out");
+    window.location.reload();
+  };
 
   return (
     <div className="header">
@@ -47,7 +52,7 @@ const Header = () => {
           <div>Blog</div>
           <div>🚀Promote Internship</div>
           <div>Account</div>
-          <div>Log Out</div>
+          <div onClick={LogoutHandler}>Log Out</div>
         </div>
       </div>
     </div>
