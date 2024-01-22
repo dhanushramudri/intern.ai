@@ -7,6 +7,7 @@ import Jobs from "./Jobs/Jobs";
 import Job from "./Job/Job";
 import Footer from "./Footer/Footer";
 import Dropdown from "./Dropdown/Dropdown";
+import ScrapeData from "./ScrapeData";
 import "../App.css";
 
 const Home = ({ message }) => {
@@ -26,6 +27,7 @@ const Home = ({ message }) => {
       <Jobs />
       <Job />
       <Footer />
+      <ScrapeData />
     </>
   );
 };
