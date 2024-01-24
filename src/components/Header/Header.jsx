@@ -44,7 +44,7 @@ const Header = () => {
 
       <div className="header_container">
         <div className="logo">
-          Intern <span>.ai</span>
+          Intern <span>-ai</span>
           <div className="beta">beta</div>
         </div>
         <div className="header_items">
